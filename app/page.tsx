@@ -1,12 +1,13 @@
-import Hero from '@/components/hero';
 import Hud from '@/components/hud';
+import Intro from '@/components/intro';
 
 export default function Home() {
   return (
     <main className="relative">
       <Hud />
       <div className="secondary-gradient absolute left-[342px] z-0 mt-[60px] h-full w-px" />
-      <Hero />
+      <Intro />
+      <div className=" h-screen"></div>
     </main>
   );
 }
