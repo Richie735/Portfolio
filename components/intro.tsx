@@ -1,6 +1,9 @@
 export default function Intro() {
   return (
-    <section id="home" className="mt-[380px] h-screen px-4containersExtraGap">
+    <section
+      id="home"
+      className="mt-[380px] h-screen scroll-mt-[380px] px-4containersExtraGap"
+    >
       <p className="ml-[100px] font-spaceMono text-base font-normal tracking-widest">
         Hi, I&apos;m
       </p>
