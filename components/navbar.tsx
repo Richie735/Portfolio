@@ -14,7 +14,7 @@ const Navbar = () => {
     <>
       <div className="fixed left-[364px] top-[155px] z-50">
         <Image
-          className="-translate-y-6 scale-150 "
+          className="-translate-y-6 scale-150 select-none"
           src="/assets/svgs/Navbar.svg"
           alt="Navbar"
           width={135}
