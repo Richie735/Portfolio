@@ -2,15 +2,15 @@ export default function Intro() {
   return (
     <section
       id="home"
-      className="mt-[380px] h-screen scroll-mt-[380px] px-4containersExtraGap"
+      className="mx-4containersExtraGap mt-[380px] h-screen scroll-mt-[380px]"
     >
-      <p className="ml-[100px] font-spaceMono text-base font-normal tracking-widest">
+      <p className="mx-[100px] font-spaceMono text-base font-normal tracking-widest">
         Hi, I&apos;m
       </p>
-      <h1 className=" ml-1container1gap line-clamp-none font-spaceMono text-7xl font-bold tracking-tighter">
+      <h1 className=" mx-1container1gap line-clamp-none font-spaceMono text-7xl font-bold tracking-tighter">
         RICARDO PEREIRA
       </h1>
-      <p className="ml-[100px] font-spaceMono text-xl font-normal  tracking-wider   text-primary">
+      <p className="mx-[100px] font-spaceMono text-xl font-normal  tracking-wider   text-primary">
         Software Engineer{' '}
       </p>
     </section>
