@@ -7,6 +7,7 @@
 
 :root {
   --primary-color: 255 200 0;
+  --bg-color: 33 33 33;
 }
 
 * {
@@ -42,6 +43,7 @@
   );
 }
 
+/* About */
 .img-container:after,
 .img-container:before {
   content: '';
@@ -94,5 +96,12 @@
 
   to {
     background-position: 0% -100%;
+  }
+}
+
+/* Button */
+@layer components {
+  .clip-custom {
+    clip-path: polygon(0% 40%, 10% 0%, 100% 0%, 100% 60%, 90% 100%, 0% 100%);
   }
 }
