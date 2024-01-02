@@ -9,7 +9,9 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: '#ffc800',
+        primary: 'rgb(var(--primary-color))',
+        primaryFade: 'rgb(var(--primary-color) / 70%)',
+        primaryFade2: 'rgb(var(--primary-color) / 10%)',
         secondary: '#282828',
         background: '#212121',
         text: {
@@ -18,9 +20,12 @@ const config: Config = {
         },
       },
       spacing: {
-        '1container': '72px',
         '1gap': '24px',
+        '2gap': '48px',
+        '1container': '72px',
         '1container1gap': '96px',
+        '1container2gap': '120px',
+        '2containers': '168px',
         '4containers': '336px',
         '4containersExtraGap': '360px',
       },

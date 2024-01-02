@@ -5,20 +5,29 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --primary-color: 255 200 0;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
   color-scheme: dark;
+  /* border: 1px solid red; */
 }
 
 .primary-gradient {
-  background: #ffc800;
-  background: linear-gradient(-90deg, #ffc800 0%, rgba(33, 33, 33, 100) 100%);
+  background: rgb(var(--primary-color));
+  background: linear-gradient(
+    -90deg,
+    rgb(var(--primary-color)) 0%,
+    rgba(33, 33, 33, 100) 100%
+  );
   background: -webkit-linear-gradient(
     -90deg,
-    #ffc800 0%,
+    rgb(var(--primary-color)) 0%,
     rgba(33, 33, 33, 100) 100%
   );
 }
@@ -31,4 +40,59 @@
     #bd9400 0%,
     rgba(60, 51, 80, 0) 100%
   );
+}
+
+.img-container:after,
+.img-container:before {
+  content: '';
+  height: 8px;
+  position: absolute;
+  z-index: 4;
+  left: 50%;
+  translate: -50% 0%;
+  background-color: rgb(var(--primary-color));
+}
+
+.img-container:before {
+  width: 45%;
+  top: 0rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.img-container:after {
+  width: 45%;
+  bottom: 0rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.img-effect {
+  filter: sepia(100%) hue-rotate(10deg);
+  opacity: 0.7;
+}
+
+.line-bg-effect {
+  background: repeating-linear-gradient(
+    rgb(var(--primary-color) / 0.15),
+    rgb(var(--primary-color) / 0.15) 3px,
+    transparent 3px,
+    transparent 9px
+  );
+  background-size: 100% 9px;
+  animation: pan-overlay 22s infinite linear;
+  position: absolute;
+  z-index: 2;
+  left: 0px;
+  top: 0px;
+}
+
+@keyframes pan-overlay {
+  from {
+    background-position: 0% 0%;
+  }
+
+  to {
+    background-position: 0% -100%;
+  }
 }
