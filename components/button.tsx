@@ -23,7 +23,7 @@ const Button = ({
     <Link
       type="button"
       href={link ? link : '#'}
-      className={`clip-custom relative h-10 cursor-pointer overflow-hidden rounded  px-5 py-[2px] text-center font-spaceMono text-xl font-bold tracking-wide 
+      className={`clip-custom relative flex h-10 cursor-pointer items-center  justify-center overflow-hidden rounded px-5 font-spaceMono text-xl font-bold tracking-wide 
       ${textColor ? textColor : 'text-background'}  ${
         bgColor ? bgColor : 'bg-primaryFade'
       } ${hoverBgColor ? 'hover:' + hoverBgColor : 'hover:bg-primary'} ${
