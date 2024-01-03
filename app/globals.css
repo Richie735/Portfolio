@@ -44,6 +44,13 @@
   );
 }
 
+/* Button */
+@layer components {
+  .button__clip-path {
+    clip-path: polygon(0% 40%, 10% 0%, 100% 0%, 100% 60%, 90% 100%, 0% 100%);
+  }
+}
+
 /* Image Container & Effect */
 .about__image-container:after,
 .about__image-container:before {
@@ -100,9 +107,67 @@
   }
 }
 
-/* Button */
-@layer components {
-  .button__clip-path {
-    clip-path: polygon(0% 40%, 10% 0%, 100% 0%, 100% 60%, 90% 100%, 0% 100%);
-  }
+/* About Container */
+.about__container:after {
+  content: '';
+  height: 80px;
+  width: 1px;
+  position: absolute;
+  left: -1px;
+  top: 45%;
+  transition: top, opacity;
+  transition-duration: 600ms;
+  transition-timing-function: ease;
+  background: linear-gradient(
+    transparent,
+    rgb(var(--primary-color)),
+    transparent
+  );
+  opacity: 0;
+}
+
+.about__container:hover:after {
+  top: 25%;
+  opacity: 1;
+}
+
+/* Skill Card */
+#cards:hover > .about__skill-card > .about__skill-card--border {
+  opacity: 1;
+}
+
+.about__skill-card::before,
+.about__skill-card--border {
+  content: '';
+  opacity: 0;
+  transition: opacity 500ms;
+  border-radius: inherit;
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+}
+
+.about__skill-card::before {
+  background: radial-gradient(
+    130px circle at var(--mouse-x) var(--mouse-y),
+    rgb(var(--primary-color) / 9%),
+    transparent 40%
+  );
+  z-index: 3;
+}
+
+.about__skill-card--border {
+  background: radial-gradient(
+    90px circle at var(--mouse-x) var(--mouse-y),
+    rgb(var(--primary-color) / 50%),
+    transparent 40%
+  );
+  z-index: 1;
+}
+
+.about__skill-card:hover::before {
+  opacity: 1;
 }
