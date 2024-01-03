@@ -12,8 +12,8 @@ const config: Config = {
         primary: 'rgb(var(--primary-color))',
         primaryFade: 'rgb(var(--primary-color) / 50%)',
         primaryFade2: 'rgb(var(--primary-color) / 10%)',
-        secondary: '#282828',
-        background: '#212121',
+        secondary: 'rgb(var(--secondary-color))',
+        background: 'rgb(var(--bg-color))',
         text: {
           primary: '#fff',
           secondary: '#000',
