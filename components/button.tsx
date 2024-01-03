@@ -23,9 +23,9 @@ const Button = ({
     <Link
       type="button"
       href={link ? link : '#'}
-      className={`clip-custom relative flex h-10 cursor-pointer items-center  justify-center overflow-hidden rounded px-5 font-spaceMono text-xl font-bold tracking-wide 
-      ${textColor ? textColor : 'text-background'}  ${
-        bgColor ? bgColor : 'bg-primaryFade'
+      className={`button__clip-path relative flex h-10 cursor-pointer items-center  justify-center overflow-hidden rounded px-5 font-spaceMono text-xl font-bold tracking-wide 
+      ${textColor ? 'text-' + textColor : 'text-background'}  ${
+        bgColor ? 'bg-' + bgColor : 'bg-primaryFade'
       } ${hoverBgColor ? 'hover:' + hoverBgColor : 'hover:bg-primary'} ${
         hoverTextColor ? 'hover:' + hoverBgColor : ''
       } `}

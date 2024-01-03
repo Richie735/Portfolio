@@ -7,6 +7,7 @@
 
 :root {
   --primary-color: 255 200 0;
+  --secondary-color: 26 26 26;
   --bg-color: 33 33 33;
 }
 
@@ -43,38 +44,38 @@
   );
 }
 
-/* About */
-.img-container:after,
-.img-container:before {
+/* Image Container & Effect */
+.about__image-container:after,
+.about__image-container:before {
   content: '';
   height: 8px;
   position: absolute;
   z-index: 4;
   left: 50%;
   translate: -50% 0%;
-  background-color: rgb(var(--primary-color));
+  background-color: rgb(var(--primary-color) / 50%);
 }
 
-.img-container:before {
+.about__image-container:before {
   width: 45%;
   top: 0rem;
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
 }
 
-.img-container:after {
+.about__image-container:after {
   width: 45%;
   bottom: 0rem;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
 }
 
-.img-effect {
+.about__image--filter {
   filter: sepia(100%) hue-rotate(10deg);
   opacity: 0.7;
 }
 
-.line-bg-effect {
+.about__image--line-effect {
   background: repeating-linear-gradient(
     rgb(var(--primary-color) / 0.15),
     rgb(var(--primary-color) / 0.15) 3px,
@@ -82,14 +83,14 @@
     transparent 9px
   );
   background-size: 100% 9px;
-  animation: pan-overlay 22s infinite linear;
+  animation: line-overlay 22s infinite linear;
   position: absolute;
   z-index: 2;
   left: 0px;
   top: 0px;
 }
 
-@keyframes pan-overlay {
+@keyframes line-overlay {
   from {
     background-position: 0% 0%;
   }
@@ -101,7 +102,7 @@
 
 /* Button */
 @layer components {
-  .clip-custom {
+  .button__clip-path {
     clip-path: polygon(0% 40%, 10% 0%, 100% 0%, 100% 60%, 90% 100%, 0% 100%);
   }
 }
