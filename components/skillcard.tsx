@@ -14,7 +14,7 @@ const SkillCard = ({ title, icon }: SkillCardProps) => {
             dangerouslySetInnerHTML={{ __html: icon }}
             className="h-7 w-7"
           ></div>
-          <p className="mt-1 font-spaceMono text-xs font-normal tracking-widest text-text-primary">
+          <p className="mt-1 font-spaceMono text-xs font-normal tracking-wide text-text-primary">
             {title}
           </p>
         </div>
