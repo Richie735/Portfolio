@@ -54,7 +54,7 @@ const About = () => {
         <div className=" ml-1gap h-px w-full bg-white" />
       </div>
 
-      <div className="mx-1container1gap mt-1gap grid grid-cols-3 gap-1gap">
+      <div className="mx-1container1gap mt-2gap grid grid-cols-3 gap-1gap">
         <div className="col-span-1 row-span-2 flex justify-center">
           <div className="about__image-container relative aspect-[10/16] overflow-hidden rounded-2xl border-primaryFade">
             <div className="absolute left-0 top-0 h-full w-full">

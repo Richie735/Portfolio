@@ -25,7 +25,7 @@ const Navbar = () => {
         <nav className="fixed left-[356px] top-[108px] z-50">
           <ul className=" flex w-[177px] items-center justify-center gap-5 rounded-md bg-background">
             <li className="group">
-              <div className="border-px absolute -left-px -top-8 z-40 h-fit w-fit rounded-md  border border-primary border-opacity-10 bg-[#222222] px-2 py-0.5 opacity-0 group-hover:opacity-100">
+              <div className="absolute -left-px -top-8 z-40 h-fit w-fit rounded-md  border border-primary border-opacity-10 bg-[#222222] px-2 py-0.5 opacity-0 group-hover:opacity-100">
                 <p className=" font-spaceMono text-xs font-light text-primary">
                   Home
                 </p>
@@ -35,7 +35,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="group">
-              <div className="border-px absolute -top-8 left-10 z-40 h-fit w-fit rounded-md  border border-primary border-opacity-10 bg-[#222222] px-2 py-0.5 opacity-0 group-hover:opacity-100">
+              <div className="absolute -top-8 left-10 z-40 h-fit w-fit rounded-md border border-primary border-opacity-10 bg-[#222222] px-2 py-0.5 opacity-0 group-hover:opacity-100">
                 <p className=" font-spaceMono text-xs font-light text-primary">
                   About
                 </p>
@@ -45,7 +45,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="group">
-              <div className="border-px absolute -top-8 left-[65px] z-40 h-fit w-fit rounded-md  border border-primary border-opacity-10 bg-[#222222] px-2 py-0.5 opacity-0 group-hover:opacity-100">
+              <div className="absolute -top-8 left-[65px] z-40 h-fit w-fit rounded-md  border border-primary border-opacity-10 bg-[#222222] px-2 py-0.5 opacity-0 group-hover:opacity-100">
                 <p className=" font-spaceMono text-xs font-light text-primary">
                   Background
                 </p>
@@ -55,7 +55,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="group">
-              <div className="border-px absolute -top-8 left-[118px] z-40 h-fit w-fit rounded-md  border border-primary border-opacity-10 bg-[#222222] px-2 py-0.5 opacity-0 group-hover:opacity-100">
+              <div className="absolute -top-8 left-[118px] z-40 h-fit w-fit rounded-md  border border-primary border-opacity-10 bg-[#222222] px-2 py-0.5 opacity-0 group-hover:opacity-100">
                 <p className=" font-spaceMono text-xs font-light text-primary">
                   Projects
                 </p>

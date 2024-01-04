@@ -26,7 +26,7 @@ function Hud() {
               href="https://www.linkedin.com/in/ricardopereira735/"
               target="_blank"
             >
-              <LuLinkedin className="hover:scale mt-4 h-6 w-6 text-primary  hover:text-white" />
+              <LuLinkedin className="hover:scale mt-4 h-6 w-6 text-primary hover:scale-110  hover:text-white" />
             </Link>
           </div>
           <div className="group">
@@ -36,7 +36,7 @@ function Hud() {
               </p>
             </div>
             <Link href="https://github.com/Richie735" target="_blank">
-              <LuGithub className=" mt-4 h-6 w-6 text-primary  hover:scale-110 hover:text-white" />
+              <LuGithub className=" mt-4 h-6 w-6 text-primary hover:scale-110 hover:text-white" />
             </Link>
           </div>
         </div>
