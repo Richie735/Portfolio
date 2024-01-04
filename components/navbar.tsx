@@ -31,7 +31,7 @@ const Navbar = () => {
                 </p>
               </div>
               <Link href={'#home'}>
-                <PiHouseLineBold className="hover:scale h-6 w-6 text-primary hover:text-white" />
+                <PiHouseLineBold className="h-6 w-6 text-primary hover:hover:scale-110 hover:text-white" />
               </Link>
             </li>
             <li className="group">
@@ -41,7 +41,7 @@ const Navbar = () => {
                 </p>
               </div>
               <Link href={'#about'}>
-                <PiInfoBold className="hover:scale h-6 w-6 text-primary hover:text-white" />
+                <PiInfoBold className="h-6 w-6 text-primary hover:hover:scale-110 hover:text-white" />
               </Link>
             </li>
             <li className="group">
@@ -51,7 +51,7 @@ const Navbar = () => {
                 </p>
               </div>
               <Link href={'#background'}>
-                <PiClockCounterClockwiseBold className="hover:scale h-6 w-6 text-primary hover:text-white" />
+                <PiClockCounterClockwiseBold className="h-6 w-6 text-primary hover:hover:scale-110 hover:text-white" />
               </Link>
             </li>
             <li className="group">
@@ -61,7 +61,7 @@ const Navbar = () => {
                 </p>
               </div>
               <Link href={'#projects'}>
-                <PiBriefcaseBold className="hover:scale h-6 w-6 text-primary hover:text-white" />
+                <PiBriefcaseBold className="h-6 w-6 text-primary hover:hover:scale-110 hover:text-white" />
               </Link>
             </li>
           </ul>
