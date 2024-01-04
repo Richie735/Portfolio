@@ -1,7 +1,10 @@
 import React from 'react';
 import {
   PiBriefcase,
+  PiGithubLogo,
   PiGraduationCap,
+  PiInstagramLogo,
+  PiLink,
   PiMagnifyingGlass,
 } from 'react-icons/pi';
 
@@ -128,5 +131,44 @@ export const backgroundData = [
     duration: 'Set 2023 - Ongoing',
     place: '',
     icon: React.createElement(PiMagnifyingGlass),
+  },
+] as const;
+
+export const projectData = [
+  {
+    title: 'Project X',
+    tags: ['React', 'Tailwind', 'NextJS'],
+    icons: [
+      {
+        name: 'Code',
+        link: 'https://www.linkedin.com/in/ricardopereira735/',
+        icon: React.createElement(PiGithubLogo),
+      },
+      {
+        name: 'Live-Site',
+        link: 'https://www.linkedin.com/in/ricardopereira735/',
+        icon: React.createElement(PiLink),
+      },
+    ],
+    description:
+      "Lorem ipsum dolor amet you probably haven't heard of them bitters selvage listicle heirloom. Locavore kombucha street art ennui 90's, organic food truck hell of seitan skateboard literally hexagon fixie next level. Lomo salvia yuccie hella roof party echo park vegan four dollar toast cred.",
+  },
+  {
+    title: 'Project Y',
+    tags: ['React', 'Tailwind', 'NextJS'],
+    icons: [
+      {
+        name: 'Code',
+        link: 'https://www.linkedin.com/in/ricardopereira735/',
+        icon: React.createElement(PiGithubLogo),
+      },
+      {
+        name: 'Live-Site',
+        link: 'https://www.linkedin.com/in/ricardopereira735/',
+        icon: React.createElement(PiInstagramLogo),
+      },
+    ],
+    description:
+      "Lorem ipsum dolor amet you probably haven't heard of them bitters selvage listicle heirloom. Locavore kombucha street art ennui 90's, organic food truck hell of seitan skateboard literally hexagon fixie next level. Lomo salvia yuccie hella roof party echo park vegan four dollar toast cred.",
   },
 ] as const;

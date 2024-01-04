@@ -2,6 +2,7 @@ import About from '@/components/about';
 import Background from '@/components/background';
 import Hud from '@/components/hud';
 import Intro from '@/components/intro';
+import Projects from '@/components/projects';
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Intro />
       <About />
       <Background />
+      <Projects />
       <div className=" h-screen"></div>
     </main>
   );
