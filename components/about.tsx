@@ -71,10 +71,10 @@ const About = () => {
             <div className="about__image--line-effect absolute left-0 top-0 h-full w-full rounded-2xl border-[3px] border-primaryFade" />
           </div>
         </div>
-        <div className="col-span-2 col-start-2 row-span-1 row-start-1">
-          <div className="about__container relative rounded-3xl border border-white border-opacity-5 bg-secondary p-4">
-            <div className="">
-              <p className="mt-1gap font-poppins text-base font-normal tracking-widest">
+        <div className="col-span-2 col-start-2 row-span-1 row-start-1 h-full">
+          <div className="about__container relative h-full rounded-3xl border border-white border-opacity-5 bg-secondary p-6">
+            <div>
+              <p className="my-1 font-poppins text-base font-normal tracking-widest">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Laboriosam, aspernatur sunt. Facilis impedit distinctio
                 praesentium omnis tenetur, dolore, quam molestias aspernatur,
@@ -83,10 +83,10 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="col-span-2 col-start-2 row-span-1 row-start-2">
-          <div className="about__container relative rounded-3xl border border-white border-opacity-5 bg-secondary p-4">
-            <div className="">
-              <p className="mt-1gap font-poppins text-base font-normal tracking-widest">
+        <div className="col-span-2 col-start-2 row-span-1 row-start-2 h-full">
+          <div className="about__container relative h-full rounded-3xl border border-white border-opacity-5 bg-secondary p-6">
+            <div>
+              <p className="my-1 font-poppins text-base font-normal tracking-widest">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Laboriosam, aspernatur sunt. Facilis impedit distinctio
                 praesentium omnis tenetur, dolore, quam molestias aspernatur,
@@ -95,6 +95,7 @@ const About = () => {
             </div>
           </div>
         </div>
+
         <div className="col-span-2 row-span-1">
           <div className="relative rounded-3xl border border-white border-opacity-5 bg-secondary p-4">
             <div id="cards" className="grid grid-cols-8 gap-[6px]">
