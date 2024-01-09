@@ -4,7 +4,7 @@ const Background = () => {
   return (
     <section
       id="background"
-      className=" mx-4containersExtraGap h-screen scroll-mt-[200px]"
+      className=" mx-4containersExtraGap h-screen scroll-mt-[134px]"
     >
       <div className="ml-gap mr-1gap flex items-center">
         <div className=" mr-1gap h-px w-full bg-white" />

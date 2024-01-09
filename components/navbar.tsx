@@ -12,7 +12,7 @@ import {
 const Navbar = () => {
   return (
     <>
-      <div className="fixed left-[364px] top-[155px] z-50">
+      <div className="fixed left-[364px] top-[105px] z-50">
         <Image
           className="-translate-y-6 scale-150 select-none"
           src="/assets/svgs/Navbar.svg"
@@ -22,7 +22,7 @@ const Navbar = () => {
         />
       </div>
       <header>
-        <nav className="fixed left-[356px] top-[108px] z-50">
+        <nav className="fixed left-[356px] top-[58px] z-50">
           <ul className=" flex w-[177px] items-center justify-center gap-5 rounded-md bg-background">
             <li className="group">
               <div className="absolute -left-px -top-8 z-40 h-fit w-fit rounded-md  border border-primary border-opacity-10 bg-[#222222] px-2 py-0.5 opacity-0 group-hover:opacity-100">
