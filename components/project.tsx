@@ -44,7 +44,10 @@ const Project = ({ index, title, tags, icons, description }: ProjectProps) => {
             }`}
           >
             {tags.map((tag) => (
-              <li className="mr-5 font-spaceMono text-sm font-light text-primary">
+              <li
+                className="mr-5 font-spaceMono text-sm font-light text-primary"
+                key={tag}
+              >
                 {tag}
               </li>
             ))}

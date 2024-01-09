@@ -19,7 +19,7 @@ const Background = () => {
       <ol className="relative mx-1container mr-[335px] mt-1gap border-e border-primaryFade">
         <div className="mb-10 me-8 h-1gap"> </div>
         {backgroundData.map((item, index) => (
-          <li className="mb-10 me-8 mt-10 flex justify-end ">
+          <li key={index} className="mb-10 me-8 mt-10 flex justify-end ">
             <span className="absolute -end-3 flex h-6 w-6 items-center justify-center rounded-full bg-primary text-text-secondary ring-4 ring-primaryFade2">
               {item.icon}
             </span>

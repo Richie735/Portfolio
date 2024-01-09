@@ -24,7 +24,7 @@ const Navbar = () => {
       <header>
         <nav className="fixed left-[356px] top-[58px] z-50">
           <ul className=" flex w-[177px] items-center justify-center gap-5 rounded-md bg-background">
-            <li className="group">
+            <li className="group" key="home">
               <div className="absolute -left-px -top-8 z-40 h-fit w-fit rounded-md  border border-primary border-opacity-10 bg-[#222222] px-2 py-0.5 opacity-0 group-hover:opacity-100">
                 <p className=" font-spaceMono text-xs font-light text-primary">
                   Home
@@ -34,7 +34,7 @@ const Navbar = () => {
                 <PiHouseLineBold className="h-6 w-6 text-primary hover:hover:scale-110 hover:text-white" />
               </Link>
             </li>
-            <li className="group">
+            <li className="group" key="about">
               <div className="absolute -top-8 left-10 z-40 h-fit w-fit rounded-md border border-primary border-opacity-10 bg-[#222222] px-2 py-0.5 opacity-0 group-hover:opacity-100">
                 <p className=" font-spaceMono text-xs font-light text-primary">
                   About
@@ -44,7 +44,7 @@ const Navbar = () => {
                 <PiInfoBold className="h-6 w-6 text-primary hover:hover:scale-110 hover:text-white" />
               </Link>
             </li>
-            <li className="group">
+            <li className="group" key="background">
               <div className="absolute -top-8 left-[65px] z-40 h-fit w-fit rounded-md  border border-primary border-opacity-10 bg-[#222222] px-2 py-0.5 opacity-0 group-hover:opacity-100">
                 <p className=" font-spaceMono text-xs font-light text-primary">
                   Background
@@ -54,7 +54,7 @@ const Navbar = () => {
                 <PiClockCounterClockwiseBold className="h-6 w-6 text-primary hover:hover:scale-110 hover:text-white" />
               </Link>
             </li>
-            <li className="group">
+            <li className="group" key="projects">
               <div className="absolute -top-8 left-[118px] z-40 h-fit w-fit rounded-md  border border-primary border-opacity-10 bg-[#222222] px-2 py-0.5 opacity-0 group-hover:opacity-100">
                 <p className=" font-spaceMono text-xs font-light text-primary">
                   Projects
