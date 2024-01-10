@@ -23,9 +23,11 @@ const Projects = () => {
             key={index}
             index={index}
             title={project.title}
+            date={project.date}
             tags={[...project.tags]}
-            icons={Array.from(project.icons)}
+            icons={Array.isArray(project.icons) ? project.icons : []}
             description={project.description}
+            img={project.img}
           />
         ))}
       </div>
