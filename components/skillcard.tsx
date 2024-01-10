@@ -6,7 +6,7 @@ type SkillCardProps = {
 };
 const SkillCard = ({ title, icon }: SkillCardProps) => {
   return (
-    <div className="about__skill-card relative h-1container w-1container rounded-xl bg-background bg-opacity-20">
+    <div className="about__skill-card relative h-1container w-1container rounded-xl bg-white bg-opacity-5">
       <div className="about__skill-card--border"></div>
       <div className="relative z-[2] m-px h-[calc(100%-2px)] w-[calc(100%-2px)] rounded-xl bg-secondary">
         <div className="flex h-full w-full flex-col items-center justify-center">

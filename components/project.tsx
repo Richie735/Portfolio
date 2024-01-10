@@ -45,7 +45,7 @@ const Project = ({ index, title, tags, icons, description }: ProjectProps) => {
           >
             {tags.map((tag) => (
               <li
-                className="mr-5 font-spaceMono text-sm font-light text-primary"
+                className="mx-3 font-spaceMono text-sm font-light text-primary"
                 key={tag}
               >
                 {tag}
@@ -63,7 +63,7 @@ const Project = ({ index, title, tags, icons, description }: ProjectProps) => {
                   <Link href={icon.link} target="_blank">
                     {React.cloneElement(icon.icon, {
                       className:
-                        'hover:hover:scale-110 mr-5 h-6 w-6 text-primary hover:scale-110  hover:text-white',
+                        'hover:hover:scale-110 mx-3 h-6 w-6 text-primary hover:scale-110  hover:text-white',
                     })}
                   </Link>
                 </li>

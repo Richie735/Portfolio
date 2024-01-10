@@ -1,6 +1,5 @@
 'use client';
 
-import Link from 'next/link';
 import { LuGithub, LuLinkedin } from 'react-icons/lu';
 import Navbar from './navbar';
 
@@ -22,12 +21,12 @@ function Hud() {
                 Linkedin
               </p>
             </div>
-            <Link
+            <a
               href="https://www.linkedin.com/in/ricardopereira735/"
               target="_blank"
             >
               <LuLinkedin className="hover:scale mt-4 h-6 w-6 text-primary hover:scale-110  hover:text-white" />
-            </Link>
+            </a>
           </div>
           <div className="group">
             <div className="border-px absolute z-40 h-fit w-fit translate-x-10 translate-y-4 rounded-md border  border-primary border-opacity-10 bg-[#222222] px-2 py-0.5 opacity-0 group-hover:opacity-100 ">
@@ -35,9 +34,9 @@ function Hud() {
                 Github
               </p>
             </div>
-            <Link href="https://github.com/Richie735" target="_blank">
+            <a href="https://github.com/Richie735" target="_blank">
               <LuGithub className=" mt-4 h-6 w-6 text-primary hover:scale-110 hover:text-white" />
-            </Link>
+            </a>
           </div>
         </div>
       </div>
