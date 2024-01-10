@@ -4,9 +4,10 @@ import {
   PiGithubLogo,
   PiGraduationCap,
   PiInstagramLogo,
-  PiLink,
+  // PiLink,
   PiMagnifyingGlass,
 } from 'react-icons/pi';
+import { RxLinkedinLogo } from 'react-icons/rx';
 
 export const skillsData = [
   {
@@ -60,8 +61,7 @@ export const skillsData = [
   {
     name: 'NextJS',
     icon: `<svg fill="#fff" viewBox="0 0 128 128">
-    <path d="M64 0C28.7 0 0 28.7 0 64s28.7 64 64 64c11.2 0 21.7-2.9 30.8-7.9L48.4 55.3v36.6h-6.8V41.8h6.8l50.5 75.8C116.4 106.2 128 86.5 128 64c0-35.3-28.7-64-64-64zm22.1 84.6l-7.5-11.3V41.8h7.5v42.8z"></path>
-    </svg>`,
+    <path d="M64 0C28.7 0 0 28.7 0 64s28.7 64 64 64c11.2 0 21.7-2.9 30.8-7.9L48.4 55.3v36.6h-6.8V41.8h6.8l50.5 75.8C116.4 106.2 128 86.5 128 64c0-35.3-28.7-64-64-64zm22.1 84.6l-7.5-11.3V41.8h7.5v42.8z"></path></svg>`,
   },
   {
     name: 'Python',
@@ -136,39 +136,47 @@ export const backgroundData = [
 
 export const projectData = [
   {
-    title: 'Project X',
-    tags: ['React', 'Tailwind', 'NextJS'],
+    title: 'Portfolio',
+    date: 'Jan 2024 - Ongoing',
+    tags: ['React', 'NextJS', 'TypeScript', 'Tailwind'],
     icons: [
       {
         name: 'Code',
-        link: 'https://www.linkedin.com/in/ricardopereira735/',
+        link: 'https://github.com/Richie735/Portfolio',
         icon: React.createElement(PiGithubLogo),
-      },
-      {
-        name: 'Live-Site',
-        link: 'https://www.linkedin.com/in/ricardopereira735/',
-        icon: React.createElement(PiLink),
       },
     ],
     description:
-      "Lorem ipsum dolor amet you probably haven't heard of them bitters selvage listicle heirloom. Locavore kombucha street art ennui 90's, organic food truck hell of seitan skateboard literally hexagon fixie next level. Lomo salvia yuccie hella roof party echo park vegan four dollar toast cred.",
+      'Portfolio is a representation of my journey in tech, serving as a personalized showcase that unveils my skills, projects, and achievements. Explore the site to delve into my diverse skill set and passions.',
+    img: '/assets/images/portfolio.png',
   },
   {
-    title: 'Project Y',
-    tags: ['React', 'Tailwind', 'NextJS'],
+    title: 'UTAD Summit',
+    date: 'Oct 2022 - Mar 2023',
+    tags: ['Event-Management', 'Team-Leading'],
     icons: [
       {
         name: 'Code',
-        link: 'https://www.linkedin.com/in/ricardopereira735/',
-        icon: React.createElement(PiGithubLogo),
+        link: 'https://www.linkedin.com/in/utadsummit/',
+        icon: React.createElement(RxLinkedinLogo),
       },
       {
-        name: 'Live-Site',
-        link: 'https://www.linkedin.com/in/ricardopereira735/',
+        name: 'Instagram',
+        link: 'https://www.instagram.com/utadsummit/',
         icon: React.createElement(PiInstagramLogo),
       },
     ],
     description:
-      "Lorem ipsum dolor amet you probably haven't heard of them bitters selvage listicle heirloom. Locavore kombucha street art ennui 90's, organic food truck hell of seitan skateboard literally hexagon fixie next level. Lomo salvia yuccie hella roof party echo park vegan four dollar toast cred.",
+      'Engineered over a five-month span, the UTAD Summit brought a fresh perspective to event management. Attracting 18 prominent companies and hosting 30+ speakers in 40 engaging activities, it became a hub for 500+ attendees. This success positions the event as a catalyst for future growth and innovation in the realm of academic and professional collaboration.',
+    img: '/assets/images/utad-summit.jpeg',
+  },
+  {
+    title: 'Flutter GPT',
+    date: 'Mar 2023 - Jun 2023',
+    tags: ['Flutter', 'OpenAI-API'],
+    icons: [],
+    description:
+      'Developed an AI assistant mobile app with voice/text-to-image/text capabilities, powered by OpenAI API. Originating, as part of  scientific survey investigating real-world AI applications, this project represents a significant exploration in the intersection of academic research and technological innovation.',
+    img: '/assets/images/flutter-gpt.png',
   },
 ] as const;
