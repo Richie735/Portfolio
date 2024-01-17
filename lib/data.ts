@@ -151,6 +151,30 @@ export const projectData = [
     img: '/assets/images/portfolio.png',
   },
   {
+    title: 'Advent of Code 2023',
+    date: 'Dec 2023',
+    tags: ['Python', 'Algorithms', 'Problem-Solving'],
+    icons: [
+      {
+        name: 'Code',
+        link: 'https://github.com/Richie735/Advent-of-Code-2023',
+        icon: React.createElement(PiGithubLogo),
+      },
+    ],
+    description:
+      'I participated in the annual coding challenge organized by the Advent of Code community. Throughout December, I tackled a series of daily programming puzzles that challenged my problem-solving skills and algorithmic thinking using Python.',
+    img: '/assets/images/aoc23.png',
+  },
+  {
+    title: 'Flutter GPT',
+    date: 'Mar 2023 - Jun 2023',
+    tags: ['Flutter', 'OpenAI-API'],
+    icons: [],
+    description:
+      'Developed an AI assistant mobile app with voice/text-to-image/text capabilities, powered by OpenAI API. Originating, as part of  scientific survey investigating real-world AI applications, this project represents a significant exploration in the intersection of academic research and technological innovation.',
+    img: '/assets/images/flutter-gpt.png',
+  },
+  {
     title: 'UTAD Summit',
     date: 'Oct 2022 - Mar 2023',
     tags: ['Event-Management', 'Team-Leading'],
@@ -169,14 +193,5 @@ export const projectData = [
     description:
       'Engineered over a five-month span, the UTAD Summit brought a fresh perspective to event management. Attracting 18 prominent companies and hosting 30+ speakers in 40 engaging activities, it became a hub for 500+ attendees. This success positions the event as a catalyst for future growth and innovation in the realm of academic and professional collaboration.',
     img: '/assets/images/utad-summit.jpeg',
-  },
-  {
-    title: 'Flutter GPT',
-    date: 'Mar 2023 - Jun 2023',
-    tags: ['Flutter', 'OpenAI-API'],
-    icons: [],
-    description:
-      'Developed an AI assistant mobile app with voice/text-to-image/text capabilities, powered by OpenAI API. Originating, as part of  scientific survey investigating real-world AI applications, this project represents a significant exploration in the intersection of academic research and technological innovation.',
-    img: '/assets/images/flutter-gpt.png',
   },
 ] as const;
