@@ -58,8 +58,8 @@ const About = () => {
       className="mx-0 -mt-32 h-screen lg:mx-4containersExtraGap lg:-mt-[350px] lg:scroll-mt-[134px]"
     >
       <div className="mx-4 flex items-center lg:mx-1gap">
-        <h2 className="flex items-center font-spaceMono text-5xl font-bold tracking-tighter">
-          <span className=" font-spaceMono text-4xl font-normal tracking-tight text-primary">
+        <h2 className="flex items-center font-spaceMono text-4xl font-bold tracking-tighter lg:text-5xl">
+          <span className=" font-spaceMono text-3xl font-normal tracking-tight text-primary lg:text-4xl">
             01.
           </span>
           About
