@@ -8,12 +8,11 @@ export default function Home() {
   return (
     <main className="relative">
       <Hud />
-      <div className="secondary-gradient absolute left-[342px] z-0 mt-[60px] h-full w-px" />
+      <div className="secondary-gradient absolute left-[342px] z-0 mt-[60px] h-full w-px opacity-0 lg:opacity-100" />
       <Intro />
       <About />
       <Background />
       <Projects />
-      <div className=" h-screen"></div>
     </main>
   );
 }

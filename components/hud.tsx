@@ -7,7 +7,7 @@ function Hud() {
   return (
     <>
       <Navbar />
-      <div className="relative z-50">
+      <div className="relative z-50 opacity-0 lg:opacity-100">
         <div className="fixed bottom-0 left-4containers flex flex-col items-center">
           <div className="h-3 w-3 rounded-full bg-primary" />
           <div className="primary-gradient h-[50vh] w-px" />
