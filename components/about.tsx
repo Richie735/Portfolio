@@ -124,7 +124,7 @@ const About = () => {
 
           <div
             id="reachOut"
-            className="flex h-full w-full grid-cols-4 items-center justify-center gap-5 gap-[6px] rounded-3xl border border-white border-opacity-5 bg-secondary px-4"
+            className="flex h-full w-full grid-cols-4 items-center justify-center gap-[6px] rounded-3xl border border-white border-opacity-5 bg-secondary px-4"
           >
             <p className="my-1 font-poppins text-base font-normal tracking-widest">
               {isAvailable ? 'Want to work together?' : 'You can reach out on:'}
@@ -200,7 +200,7 @@ const About = () => {
             </div>
             <div className="flex justify-center p-5">
               <a
-                href="/assets/CV.pdf"
+                href="/assets/CV-Ricardo-Pereira.pdf"
                 download={true}
                 className="button__clip-path relative flex h-10 cursor-pointer items-center overflow-hidden bg-primaryFade px-5 font-spaceMono text-xl font-bold tracking-wide text-background transition-colors duration-200 ease-in-out hover:bg-primary hover:text-secondary"
               >
