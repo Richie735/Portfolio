@@ -28,7 +28,7 @@ const Project = ({
   index % 2 === 0 ? (isEven = true) : (isEven = false);
 
   return (
-    <div className="mb-1container1gap grid w-full grid-cols-12 grid-rows-6 items-center gap-[10px]">
+    <div className="mb-1container1gap w-full grid-cols-12 grid-rows-6 items-center gap-[10px] lg:grid">
       <div
         className={`relative z-10 col-span-7 row-start-1 row-end-[-1] ${
           isEven ? 'col-start-1' : 'col-end-13'
@@ -92,7 +92,7 @@ const Project = ({
       </div>
 
       <div
-        className={`project--image relative z-0 col-span-7  row-start-1 row-end-[-1] aspect-[16/10] max-w-[68vh] overflow-hidden rounded-lg border-2 border-secondary bg-primaryFade hover:bg-transparent ${
+        className={`project--image relative z-0 col-span-7  row-start-1 row-end-[-1] hidden aspect-[16/10] max-w-[68vh] overflow-hidden rounded-lg border-2 border-secondary bg-primaryFade hover:bg-transparent lg:flex ${
           isEven ? 'col-end-[-1]' : 'col-start-1'
         }`}
       >

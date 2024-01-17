@@ -5,11 +5,11 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className=" mx-4containersExtraGap h-screen scroll-mt-[134px]"
+      className="mx-0 h-screen lg:mx-4containersExtraGap lg:mt-0 lg:scroll-mt-[134px]"
     >
-      <div className="ml-gap mr-1gap flex items-center">
-        <h2 className="flex items-center font-spaceMono text-5xl font-bold tracking-tighter">
-          <span className=" font-spaceMono text-4xl font-normal tracking-tight text-primary">
+      <div className="mx-4 flex items-center lg:mx-1gap">
+        <h2 className="flex items-center font-spaceMono text-4xl font-bold tracking-tighter lg:text-5xl">
+          <span className="font-spaceMono text-3xl font-normal tracking-tight text-primary lg:text-4xl">
             03.
           </span>
           Projects
@@ -17,7 +17,7 @@ const Projects = () => {
         <div className=" ml-1gap h-px w-full bg-white" />
       </div>
 
-      <div className="mx-1container mt-2gap max-w-5xl gap-1container">
+      <div className="mx-1gap mt-2gap max-w-5xl gap-1container pb-1gap lg:mx-1container">
         {projectData.map((project, index) => (
           <Project
             key={index}

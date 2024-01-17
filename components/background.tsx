@@ -4,12 +4,12 @@ const Background = () => {
   return (
     <section
       id="background"
-      className="mx-0 mt-[1000px] h-screen lg:mx-4containersExtraGap lg:mt-0 lg:scroll-mt-[134px]"
+      className="mx-0 mt-[1200px] h-screen lg:mx-4containersExtraGap lg:mt-0 lg:scroll-mt-[134px]"
     >
       <div className="mx-4 flex items-center lg:mx-1gap">
         <div className=" mr-1gap h-px w-full bg-white" />
         <h2 className="flex items-center font-spaceMono text-4xl font-bold tracking-tighter lg:text-5xl">
-          <span className=" font-spaceMono text-3xl font-normal tracking-tight text-primary lg:text-4xl">
+          <span className="font-spaceMono text-3xl font-normal tracking-tight text-primary lg:text-4xl">
             02.
           </span>
           Background
