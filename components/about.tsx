@@ -55,22 +55,22 @@ const About = () => {
   return (
     <section
       id="about"
-      className=" mx-4containersExtraGap -mt-[350px] h-screen scroll-mt-[134px]"
+      className="mx-0 -mt-32 h-screen lg:mx-4containersExtraGap lg:-mt-[350px] lg:scroll-mt-[134px]"
     >
-      <div className="ml-gap mr-1gap flex items-center">
+      <div className="mx-4 flex items-center lg:mx-1gap">
         <h2 className="flex items-center font-spaceMono text-5xl font-bold tracking-tighter">
           <span className=" font-spaceMono text-4xl font-normal tracking-tight text-primary">
             01.
           </span>
           About
         </h2>
-        <div className=" ml-1gap h-px w-full bg-white" />
+        <div className="ml-1gap h-px w-full bg-white" />
       </div>
 
-      <div className="mx-1container1gap mt-2gap grid grid-cols-3 grid-rows-4 gap-1gap">
+      <div className="mx-4 mt-2gap flex flex-col gap-1gap lg:mx-1container1gap lg:grid lg:grid-cols-3 lg:grid-rows-4">
         {/* Image */}
-        <div className="col-span-1 row-span-2 flex justify-center">
-          <div className="about__image-container relative aspect-[10/16] overflow-hidden rounded-2xl border-primaryFade">
+        <div className="flex w-full justify-center lg:col-span-1 lg:row-span-2">
+          <div className="about__image-container relative aspect-[4/6] w-[80%] overflow-hidden rounded-2xl border-primaryFade lg:w-full">
             <div className="absolute left-0 top-0 h-full w-full">
               <Image
                 src="/assets/images/Self.jpg"
@@ -87,7 +87,7 @@ const About = () => {
         </div>
 
         {/* Description */}
-        <div className="col-span-2 row-span-1 h-full">
+        <div className="h-full lg:col-span-2 lg:row-span-1">
           <div className="about__container relative h-full rounded-3xl border border-white border-opacity-5 bg-secondary p-6">
             <div>
               <p className="my-2 font-poppins text-base font-normal tracking-widest">
@@ -105,11 +105,25 @@ const About = () => {
           </div>
         </div>
 
+        {/* Skill Cards */}
+        <div className="h-1/5 lg:col-span-2 lg:row-span-2">
+          <div className="relative flex justify-center rounded-3xl border border-white border-opacity-5 bg-secondary p-4 ">
+            <div
+              id="cards"
+              className="grid grid-cols-4 gap-[6px] lg:grid-cols-8"
+            >
+              {skillsData.map((skill, index) => (
+                <SkillCard key={index} title={skill.name} icon={skill.icon} />
+              ))}
+            </div>
+          </div>
+        </div>
+
         {/* Status + Reach Out */}
-        <div className="col-span-1 row-span-1 flex h-full flex-col items-center justify-center gap-1gap">
-          <div className="relative flex h-full w-full items-center justify-center rounded-3xl border border-white border-opacity-5 bg-secondary">
+        <div className="flex h-full items-center justify-center gap-1gap lg:col-span-1 lg:col-start-2 lg:row-span-1 lg:row-start-2 lg:flex-col">
+          <div className="relative hidden h-full w-full items-center justify-center rounded-3xl border border-white border-opacity-5 bg-secondary lg:flex">
             <GrStatusGoodSmall
-              className={`mr-3 h-6 w-6 ${
+              className={`mr-3 h-6 w-6 opacity-0 lg:opacity-100 ${
                 isAvailable ? 'text-available' : 'text-unavailable'
               }`}
             />
@@ -124,7 +138,7 @@ const About = () => {
 
           <div
             id="reachOut"
-            className="flex h-full w-full grid-cols-4 items-center justify-center gap-[6px] rounded-3xl border border-white border-opacity-5 bg-secondary px-4"
+            className="flex h-24 w-full grid-cols-4 items-center justify-center gap-[6px] rounded-3xl border border-white border-opacity-5 bg-secondary px-4 lg:h-full"
           >
             <p className="my-1 font-poppins text-base font-normal tracking-widest">
               {isAvailable ? 'Want to work together?' : 'You can reach out on:'}
@@ -149,7 +163,7 @@ const About = () => {
         </div>
 
         {/* Bullet Point + CV Button */}
-        <div className="col-span-1 row-span-2">
+        <div className="lg:col-span-1 lg:col-start-3 lg:row-span-2 lg:row-start-2">
           <div className="relative h-full">
             <div className="about__container h-4/5 rounded-3xl border border-white border-opacity-5 bg-secondary p-6 ">
               <div>
@@ -206,20 +220,6 @@ const About = () => {
               >
                 Download CV <LuDownload className="ml-2 h-6 w-6" />
               </a>
-            </div>
-          </div>
-        </div>
-
-        {/* Skill Cards */}
-        <div className="col-span-2 row-span-2 h-1/5">
-          <div className="relative flex justify-center rounded-3xl border border-white border-opacity-5 bg-secondary p-4 ">
-            <div
-              id="cards"
-              className="grid grid-cols-8 place-content-center gap-[6px]"
-            >
-              {skillsData.map((skill, index) => (
-                <SkillCard key={index} title={skill.name} icon={skill.icon} />
-              ))}
             </div>
           </div>
         </div>
