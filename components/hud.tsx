@@ -24,6 +24,7 @@ function Hud() {
             <a
               href="https://www.linkedin.com/in/ricardopereira735/"
               target="_blank"
+              aria-label="Go to Linkedin Profile"
             >
               <LuLinkedin className="hover:scale mt-4 h-6 w-6 text-primary hover:scale-110  hover:text-white" />
             </a>
@@ -34,7 +35,11 @@ function Hud() {
                 Github
               </p>
             </div>
-            <a href="https://github.com/Richie735" target="_blank">
+            <a
+              href="https://github.com/Richie735"
+              target="_blank"
+              aria-label="Go to Github Profile"
+            >
               <LuGithub className=" mt-4 h-6 w-6 text-primary hover:scale-110 hover:text-white" />
             </a>
           </div>

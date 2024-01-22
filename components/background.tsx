@@ -16,8 +16,8 @@ const Background = () => {
         </h2>
       </div>
 
-      <ol className="relative mx-1gap mt-1gap border-e border-primaryFade lg:mx-1container lg:mr-[335px]">
-        <div className="mb-10 me-8 h-1gap"> </div>
+      <ul className="relative mx-1gap mt-1gap border-e border-primaryFade lg:mx-1container lg:mr-[335px]">
+        <li className="mb-10 me-8 h-1gap"> </li>
         {backgroundData.map((item, index) => (
           <li key={index} className="mb-10 me-8 mt-10 flex justify-end ">
             <span className="absolute -end-3 flex h-6 w-6 items-center justify-center rounded-full bg-primary text-text-secondary ring-4 ring-primaryFade2">
@@ -31,13 +31,13 @@ const Background = () => {
                 {item.title}
               </h3>
 
-              <p className="mb-4 font-spaceMono text-sm font-normal text-primaryFade">
+              <p className="mb-4 font-spaceMono text-sm font-normal text-[#CC9900]">
                 {item.place}
               </p>
             </div>
           </li>
         ))}
-      </ol>
+      </ul>
     </section>
   );
 };

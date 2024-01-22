@@ -147,6 +147,7 @@ const About = () => {
             <a
               href="mailto:richierichie735@gmail.com"
               className="about__skill-card relative flex aspect-square h-[75%] cursor-pointer items-center justify-center rounded-xl border border-white border-opacity-5 bg-secondary"
+              aria-label="Email Ricardo Pereira"
             >
               <LuMail className="h-8 w-8" />
             </a>
@@ -155,6 +156,7 @@ const About = () => {
               href="https://www.linkedin.com/in/ricardopereira735/"
               target="_blank"
               className="about__skill-card relative flex aspect-square h-[75%] cursor-pointer items-center justify-center rounded-xl border border-white border-opacity-5 bg-secondary"
+              aria-label="Go to Linkedin Profile"
             >
               <div className="about__skill-card--border"></div>
               <LuLinkedin className="h-8 w-8" />
@@ -167,9 +169,9 @@ const About = () => {
           <div className="relative h-full">
             <div className="about__container h-4/5 rounded-3xl border border-white border-opacity-5 bg-secondary p-6 ">
               <div>
-                <h4 className="mb-1 font-spaceMono text-base font-bold tracking-normal text-primary">
+                <h3 className="mb-1 font-spaceMono text-base font-bold tracking-normal text-primary">
                   My current mission is:
-                </h4>
+                </h3>
                 <p className="font-poppins text-sm font-normal tracking-widest">
                   🛠️ Developing practical skills
                 </p>
@@ -179,9 +181,9 @@ const About = () => {
               </div>
 
               <div className="mt-3">
-                <h4 className="mb-1 font-spaceMono text-base font-bold tracking-normal text-primary">
-                  Thinghts I'm interested in:
-                </h4>
+                <h3 className="mb-1 font-spaceMono text-base font-bold tracking-normal text-primary">
+                  Things I'm interested in:
+                </h3>
 
                 <p className="font-poppins text-sm font-normal tracking-widest">
                   🤖 Prompt engineer
@@ -192,11 +194,12 @@ const About = () => {
               </div>
 
               <div className="mt-3">
-                <h4 className="font-spaceMono text-base font-bold tracking-normal text-primary">
+                <h3 className="font-spaceMono text-base font-bold tracking-normal text-primary">
                   Outside of tech, I've been:
-                </h4>
+                </h3>
                 <div className="flex content-center">
                   <img
+                    alt="German Flag"
                     src="https://flagsapi.com/BE/flat/64.png"
                     className="mr-[11px] mt-[3px] h-4 w-4"
                   />{' '}

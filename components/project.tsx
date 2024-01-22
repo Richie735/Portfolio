@@ -42,13 +42,13 @@ const Project = ({
         >
           {date}
         </p>
-        <h4
+        <h3
           className={`mx-3 mb-4 font-spaceMono text-4xl font-bold tracking-normal ${
             isEven ? 'text-start' : 'text-end'
           }`}
         >
           {title}
-        </h4>
+        </h3>
         <div>
           <div className="rounded-lg border border-white border-opacity-5 bg-secondary p-6">
             <p className="my-1 font-poppins text-base font-normal tracking-widest">
@@ -78,7 +78,11 @@ const Project = ({
             >
               {icons.map((icon, iconIndex) => (
                 <li key={iconIndex}>
-                  <a href={icon.link} target="_blank">
+                  <a
+                    href={icon.link}
+                    target="_blank"
+                    aria-label={`${title} ${icon.name}`}
+                  >
                     {React.cloneElement(icon.icon, {
                       className:
                         'hover:hover:scale-110 mx-3 h-6 w-6 text-primary hover:scale-110  hover:text-white',
