@@ -8,7 +8,7 @@ import { skillsData } from '../lib/data';
 import SkillCard from './skillcard';
 
 const About = () => {
-  const isAvailable = true;
+  const isAvailable = false;
 
   useEffect(() => {
     const handleMouseMove = (e: { clientX: number; clientY: number }) => {
